@@ -1,0 +1,221 @@
+/* FONT SETUP */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+:root {
+--primary: #3155e7;
+--primary-dark: #2045d6;
+--black: #010101;
+--gray-1: #788190;
+--gray-2: #d3d4db;
+--white: #ffffff;
+--body: #fefefe;
+
+}
+body {
+    font-family: 'Plus jakarta-sans', sans-serif;
+    background-color: var(--body);
+}
+/* button styles */
+.btn {
+    border-radius: 8px ;
+}
+.btn-primary, .btn-outline-secondary {
+    padding: 12px 20px;
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: white;
+}
+.btn-primary:hover {
+    background-color: (--primary-dark);
+}
+.btn-outline-secondary {
+    border: 1px solid  var(--gray-2);
+    color: var(--black);
+}
+.btn-outline-secondary:focus{
+    border: 1px solid  var(--gray-2);
+    background-color: var(--gray-2);
+    color: var(--black);
+}
+/* NAVBAR STYLES */
+.navbar .btn-outline-secondary {
+border-radius: 1px solid var(--gray-2);
+color: var(--black);
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+padding: 10px 16px;
+}
+.navbar {
+    padding: 32px 0;
+
+}
+.nav-link {
+    margin-left: 41px;
+    font-size: 16px;
+    color: var(--gray-1);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--black);
+}
+/* SECTION HERO styles*/
+section.hero {
+    padding: 80px 0;
+}
+section.hero .text {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 73px;
+    color: var(--black);
+   
+}
+.buttons {
+    padding-top: 69px;
+}
+.buttons .btn-primary {
+    color:#ffffff;
+}
+.buttons .btn {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 23px;
+    
+}
+/* SECTION SETUP Styles */
+section.setup {
+    padding-top: 100px;
+}
+section.setup .text-header h3 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--black)
+}
+section.setup .text-header p {
+    font-size: 18px ;
+    font-weight: 700;
+    line-height: 28px ;
+    color: var(--gray-1);
+    padding: 27px 0;
+}
+section.setup .icons {
+    padding: 27px 0;
+}
+section.setup h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black);
+    padding-bottom: 18px;
+}
+
+section.setup .desc p {
+font-weight: 400;
+font-size: 13px;
+line-height: 22px;
+color: var(--gray-1);
+max-width:284px ;
+margin: 0 auto;
+}
+section.setup .desc p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: var(--gray-1);
+    max-width: 284px;
+   margin: 0 auto; 
+}
+/* Information section */
+section.information  {
+padding: 134px 0;
+}
+.text-information h5 {
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 48px;
+   color: var(--black);
+
+    }
+
+    .text-information p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        color: var(--gray-1);
+        padding-top: 20px;
+         }
+         section.information .info-1 {
+            padding: 184px 0;
+         }
+
+         /* FOOTER STYLES */
+         footer {
+            padding-top: 27px;
+            margin-bottom: 44px;
+        }
+        footer a {
+            font-weight: bold;
+            font-size: 14px;
+            color: var(--black);
+            line-height: 18px;
+        
+        }
+        footer .copy {
+            margin-top: 32px;
+            font-size: 14px;
+            color: var(--gray-1);
+            line-height: 16px;
+            font-weight: 400;
+        }
+        /* RESPONSIVE SECTION STYLES */
+        @media(max-width: 576px) {
+            /* NAVABAR RESPONSIVE STYLES */
+            .navbar {
+                padding: 20px 0;
+            }
+            .nav-link {
+                margin-left: 0;
+            }
+            /* RESPONSIVE HERO STYLES */
+            section.hero img {
+            padding-top: 2.5em;
+            }
+            section.hero .text {
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 53px;
+            }
+            section.hero, section.setup,
+            section.information {
+                text-align: center;
+            }
+            .buttons .btn {
+                display: block;
+                margin: 1rem 0;
+            
+            }
+
+            .buttons .ms-3 {
+                margin-left: 0  !important;
+            }
+            /* INFORMATION RESPONSIVE STYLES */
+            section.information  {
+                padding: 20px 0;
+                }
+            /* SETUP SECTION RESPONSIVE STYLES */
+            section.setup {
+                padding: 50px 0;
+            }
+            section.information .info-1 {
+                padding: 20px 0;
+             }
+            /* FOOTER RESPONSIVE STYLES */
+            footer {
+                padding-top: 50px;
+                margin-bottom: 44px;
+            }
+        }
